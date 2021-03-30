@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "returnOrigin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "returnSender",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/Test/test2.sol": "A"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/Test/test2.sol": {
+			"keccak256": "0xf98a35a8d29d21bc6281ad04a45eb9679977f1a9e6871b70980189b5389a9719",
+			"urls": [
+				"bzz-raw://0ad1965b820cef7945f8092a34ffbe62acc05bb486dde05176f0eb7591d960d9",
+				"dweb:/ipfs/QmZ2gGdTbdvrn17ZhrJZDjY5Ra76f8xZiz1dmTHGZBiGRm"
+			]
+		}
+	},
+	"version": 1
+}
