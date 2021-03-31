@@ -6,14 +6,35 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "detroySmartContract",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"constant": true,
 				"inputs": [],
-				"name": "balanceReceived",
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"payable": false,
@@ -23,12 +44,12 @@
 			{
 				"constant": true,
 				"inputs": [],
-				"name": "getBalance",
+				"name": "paused",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bool",
 						"name": "",
-						"type": "uint256"
+						"type": "bool"
 					}
 				],
 				"payable": false,
@@ -38,7 +59,7 @@
 			{
 				"constant": false,
 				"inputs": [],
-				"name": "receiveMoney",
+				"name": "sendMoney",
 				"outputs": [],
 				"payable": true,
 				"stateMutability": "payable",
@@ -46,8 +67,14 @@
 			},
 			{
 				"constant": false,
-				"inputs": [],
-				"name": "withdrawMoney",
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "_paused",
+						"type": "bool"
+					}
+				],
+				"name": "setPaused",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -62,7 +89,7 @@
 						"type": "address"
 					}
 				],
-				"name": "withdrawMoneyTo",
+				"name": "withdrawAllMoney",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -78,7 +105,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"git/solidity/Lab6/SendingMoney.sol": "SendingMoney"
+			"git/solidity/Lab7/StartStopUpdate.sol": "StartStopUpdate"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -89,11 +116,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"git/solidity/Lab6/SendingMoney.sol": {
-			"keccak256": "0xff576f8f2a7798b08b018321196a2d1617a93f9a3c7828b48a084f407e282171",
+		"git/solidity/Lab7/StartStopUpdate.sol": {
+			"keccak256": "0x13d446226d03ee3b502cc8f7d568a098c05104c89f96cde6ce16133b473d42bf",
 			"urls": [
-				"bzz-raw://dc723bf8e14383e2a373fcf00ee999635721179f9d0a24e40176e85cc620b957",
-				"dweb:/ipfs/QmV28WGUvJcnKEg7LbqUipkpQ19uTojg484CPj1rwBAji1"
+				"bzz-raw://496c9b2c7b9632958c0cf960609e89fd58c46db71e7bec0c3b150eab1d4a875b",
+				"dweb:/ipfs/QmT9BWffGM6EERRYqEkR3C5wwGF5me6araSCFpMPhe1ZKf"
 			]
 		}
 	},

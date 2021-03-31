@@ -7,12 +7,23 @@
 		"abi": [
 			{
 				"constant": true,
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
 				"name": "balanceReceived",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "totalBalance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numPayments",
 						"type": "uint256"
 					}
 				],
@@ -38,7 +49,7 @@
 			{
 				"constant": false,
 				"inputs": [],
-				"name": "receiveMoney",
+				"name": "sendMoney",
 				"outputs": [],
 				"payable": true,
 				"stateMutability": "payable",
@@ -46,8 +57,14 @@
 			},
 			{
 				"constant": false,
-				"inputs": [],
-				"name": "withdrawMoney",
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "withdrawAllMoney",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -60,9 +77,14 @@
 						"internalType": "address payable",
 						"name": "_to",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
 					}
 				],
-				"name": "withdrawMoneyTo",
+				"name": "withdrawMoney",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -78,7 +100,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"git/solidity/Lab6/SendingMoney.sol": "SendingMoney"
+			"git/solidity/Lab10/MappingStruct.sol": "MappingStruct"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -89,11 +111,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"git/solidity/Lab6/SendingMoney.sol": {
-			"keccak256": "0xff576f8f2a7798b08b018321196a2d1617a93f9a3c7828b48a084f407e282171",
+		"git/solidity/Lab10/MappingStruct.sol": {
+			"keccak256": "0x8858c51dc839e02305c29f4c2772ce6b17969e8910321ecc80f3d7228dac4db9",
 			"urls": [
-				"bzz-raw://dc723bf8e14383e2a373fcf00ee999635721179f9d0a24e40176e85cc620b957",
-				"dweb:/ipfs/QmV28WGUvJcnKEg7LbqUipkpQ19uTojg484CPj1rwBAji1"
+				"bzz-raw://f585b4fd65f312b221fb9a3e2fcb240762379520db8f4b60463280c9b0bbcac1",
+				"dweb:/ipfs/QmPgPxCj6g5SoEkyMkb7MBet3ukyGyxaJS7FVz9Dm2XHi3"
 			]
 		}
 	},
