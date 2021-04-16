@@ -179,7 +179,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Voting/ballotVoting.sol": "Ballot"
+			"git/solidity/Voting/ballotVoting.sol": "Ballot"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -190,7 +190,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Voting/ballotVoting.sol": {
+		"git/solidity/Voting/ballotVoting.sol": {
 			"keccak256": "0x80e24009880984ddf595e8f23ebc4efb046410cd43dc162e6b87b92539e9f434",
 			"urls": [
 				"bzz-raw://905bd7fbd09cd70dd34140234a0879ee70c9c466d312ae57e5e0c0ef3586cfea",

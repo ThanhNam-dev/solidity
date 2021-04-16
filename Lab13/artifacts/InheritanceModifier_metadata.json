@@ -1,0 +1,119 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "burnToken",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "createNewToken",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "purchaseToken",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sendToken",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "tokenBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Lab13/Modifier.sol": "InheritanceModifier"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lab13/Modifier.sol": {
+			"keccak256": "0x1b333aafc5db9134edb8a0f59278618677bfe1c73ac527df1e968295236b4e35",
+			"urls": [
+				"bzz-raw://d52bc88fe2f71278622b6159dc096d095e883d7cbfbe4851c4a5049727dcb4aa",
+				"dweb:/ipfs/QmNzuj5U5kXxCSbGDeQUZVBAX8C6tdZDEwoLVdsZqM9E6r"
+			]
+		},
+		"Lab13/Owned.sol": {
+			"keccak256": "0xd0d0694dcce3e796203e1973afac984fc5e73b1ccc79785410b0836b7457e599",
+			"urls": [
+				"bzz-raw://15a572bca54613e9c44845f11c3e077d526b3158a1216070bd2802d5deaf7f9b",
+				"dweb:/ipfs/Qmat9TqhyZnLYgzNGG1dfLXQ7PfWAfuvdUXe5e7RqjzTJi"
+			]
+		}
+	},
+	"version": 1
+}
